@@ -1,3 +1,9 @@
+import os
+
+os.environ["OPENAI_API_TYPE"] = "azure"
+os.environ["OPENAI_API_VERSION"] = "2023-05-15"
+os.environ["OPENAI_API_BASE"] = "https://jp-sandbox.openai.azure.com/"
+os.environ["OPENAI_API_KEY"] = "b45bc8447cbd4146b10021c22d916353"
 
 import streamlit as st
 from langchain.llms import OpenAI
